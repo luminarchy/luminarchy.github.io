@@ -58,6 +58,19 @@ section{
     color: #780000
   }
 
+  .itema{
+    display:flex;
+    white-space: nowrap;
+    border-radius: 25px;
+
+    width:400px;
+    height:100px;
+    background-color:#ffffff;
+    color: #000000;
+    border-color:#000000;
+    border-style: dotted;
+  }
+
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
     margin-left: 200px;
