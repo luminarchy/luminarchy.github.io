@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width = device_width, initial-scale=1.0">
+    <title>Amy Suo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class='header'>
+        <div class='sidebar'>
+            <h1>Navigation</h1>
+            <ul class="flex-column" style="list-style-type: none;">
+                <li>
+                    <a href="#about" class="nav-item" onclick="activate(this)">About Me</a>
+                </li>
+                <li>
+                    <a href="#csprojects" class="nav-item" onclick="activate(this)">CS Projects</a>
+                </li>
+                <li>
+                    <a href="#cv" class="nav-item" onclick="activate(this)">Curriculum Vitae</a>
+                </li>
+                <li>
+                    <a href="#mywriting" class="nav-item" onclick="activate(this)">My Writing</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-item" onclick="activate(this)">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </script>
+        <div class='content'>
+            <section id = about>
+                <h1>
+                    About
+                </h1>
+                <img src="images/image.png" alt="me!">
+                <p>
+                    Amy Suo is a senior undergraduate at Rice University majoring in Computer Science and English with a minor in Asian Studies.
+                </p>
+            </section>
+            <section id = csprojects>
+                <h1>
+                    Projects
+                </h1>
+                <p>
+                    Here is a list of my full projects and their github repos (if available). For more information, please contact me!
+                </p>
+                <div class = "item1">
+                    <h3>AMD 2025 AI Voice Agent
+                    </h3>
+                    <p>An AI Agent application using MCP (model context protocol) and Open WebUI using gpu acceleration on AMD’s MI300x. Uses a server to connect a xLAM model to any labeled dataset for informed, specific task execution, and sends receives requests using voice and audio. These requests are processed using the xLAM model and can request sampling from the llm if necessary. This project was demoed at the 2025 AMD Partner Summit using a database of PoetryFoundation poems as an example.</p>
+                    <a href="https://github.com/luminarchy/AMD-2025-AI-Agent-Demo">AMD 2025 AI Agent Demo</a>
+                </div>
+                <div class = "item2">
+                    <h3>AMD 2025 AI Vision Agent
+                    </h3>
+                    <p>An AI Vision agent that uses a Phi multimodal model and a document layout segmentation model to segment text, headers, and images from a document for text classification. Has additional colorspace conversion features to simulate and correct for color-blindness to promote accessibility in documentation.  </p>
+                    <a href="https://github.com/luminarchy/AMD2025VisionAgent">AMD 2025 Vision Agent</a>
+                </div>
+                <div class = "item1">
+                    <h3>Medical Imaging
+                    </h3>
+                    <p>Studied under a faculty mentor to use reinforcement learning algorithms on training medical donning and doffing procedures. Worked on a 3D virtual reality simulation that could model the processes of an ill-trained reinforcement agent.</p>
+                </div>
+                <div class = "item2">
+                    <h3>Medical Vision
+                    </h3>
+                    <p>Worked with a faculty professor to use datasets to analyze color values that may seem undetectable to the human eye in images of skin lesions. Used a dynamic proximity hierarchy to map the color values and minimum spanning tree algorithms to create an self-learning model to detect potential melanoma. </p>
+                </div>
+                <div class = "item1">
+                    <h3>Vision tasks
+                    </h3>
+                    <p>A compilation of vision tasks I worked on in colab</p>
+                    <a href="https://github.com/luminarchy/Vision-tasks-ai">vision tasks</a>
+                </div>
+                <div class = "item2">
+                    <h3>Word processing tasks
+                    </h3>
+                    <p>A compilation of simple word processing ML tasks I worked on in colab</p>
+                    <a href="https://github.com/luminarchy/WordProcessingML">word tasks</a>
+                </div>
+                <div class = "item1">
+                    <h3>ILOC Compiler
+                    </h3>
+                    <p>An ILOC Compiler</p>
+                    <a href="https://github.com/luminarchy/ILOC_compiler">ILOC Compiler</a>
+                </div>
+            </section>
+            <section id = cv>
+                <h1>
+                    Curriculum Vitae
+                </h1>
+                <p>
+                    Amy Suo is.
+                </p>
+            </section>
+            <section id = mywriting>
+                <h1>
+                    Writing
+                </h1>
+                <p>
+                    On the side, I like to work on fun whimsical writing projects! I mainly do poetry, studying creative usages of rhyme, meter, and sound, as I am an oral writer, occaisionally dabbling in creative non-fiction.  
+                </p>
+                <p>This portfolio is a showcase of my art in full, and as so, I would like to include my writing alongside my computer science work, as to me, these two areas in my life are not separate nor individual. They influence and interact with one another, and my work in the humanities allows me to become a better poet and computer scientist. </p>
+                <p>My current favorite authors are Ocean Vuong, Sylvia Plath, W.B. Yeats, and Tennyson. </p>
+                <div class = "item1">
+                    <h3>Butterfly Dreams on the Sea
+                    </h3>
+                    <p>This is my poetry collection consisting of 28 poems using various forms of poetic rhyme and meter. It is currently in-progress and being worked on for publishing. </p>
+                    <a href="https://docs.google.com/document/d/1MPe-Q4PI6zmkXOfI6Xz38BVEoxsmVzoOHDm63VMwyX4/edit?usp=sharing">Link to poetry</a>
+                </div>
+                <div class = "item2">
+                    <h3>Eyes Between the Heavens and Earth
+                    </h3>
+                    <p>This is my creative non-fiction piece published in Rice's R2 literary magazine. </p>
+                    <a href="https://docs.google.com/document/d/1HKTUFq30GSlUG2D-g6r1iyW6gQF8RtWEN0szaKPSK4E/edit?usp=sharing">Link to cnf</a>
+                </div>
+                
+            </section>
+            <section id = contact>
+                <h1>
+                    Contact me!
+                </h1>
+                <p>
+                    I am available through text and email.
+                </p>
+                <p>P: +1(502) 408-2528</p>
+                <p>E: amysuwoah@gmail.com</p>
+            </section>
+        </div>
+    <script>
+        function activate(element) {
+        const currentActive = document.querySelector('.nav-item.active');
+        console.log(currentActive)
+        if (currentActive) {
+            currentActive.classList.remove('active');
+        }
+        element.classList.add("active")
+        }
+    </script>
+</body>
+</html>
